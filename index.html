@@ -52,39 +52,38 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title", style="font-size: 2.5rem">
-              <img src="static/images/apple-touch-icon.png">
+              <img src="static/images/apple-touch-icon.png" style="width: 40pt">
               Dolphin: Closed-loop Open-ended Auto-research through Thinking, Practice, and Feedback
             </h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://jiakangyuan.github.io" target="_blank">Jiakang Yuan</a><sup>1,*</sup>,</span>
-                <span class="author-block">
-                  <a href="https://sky-fly97.github.io/" target="_blank">Xiangchao Yan</a><sup>2</sup>,</span>
-                  <span class="author-block">
-                    <a href="https://scholar.google.com/citations?user=K0PpvLkAAAAJ&hl=en" target="_blank">Botian Shi</a><sup>2</sup>,</span>
-                    <span class="author-block">
-                      <a href="https://eetchen.github.io/" target="_blank">Tao Chen</a><sup>1,✉</sup>,</span>
-                      <span class="author-block">
-                        <a href="https://wlouyang.github.io/" target="_blank">Wanli Ouyang</a><sup>2</sup>,</span>
-                        <span class="author-block">
-                          <a href="https://bobrown.github.io/boZhang.github.io/" target="_blank"> Bo Zhang</a><sup>2,✉,&#x2021</sup>,</span>
-                          <span class="author-block">
-                            <a href="http://leibai.site/" target="_blank">Lei Bai</a><sup>2,✉</sup>,</span>
-                            <span class="author-block">
-                              <a href="https://mmlab.siat.ac.cn/yuqiao/" target="_blank">Yu Qiao</a><sup>2</sup>,</span>
-                              <span class="author-block">
-                                <a href="https://scholar.google.com/citations?user=h3Nsz6YAAAAJ&hl=en" target="_blank">Bowen Zhou</a><sup>2</sup>,</span>
-                  </span>
-                  </div>
+                <a href="https://jiakangyuan.github.io" target="_blank">Jiakang Yuan</a><sup>1,2</sup>,</span>
+              <span class="author-block">
+                <a href="https://sky-fly97.github.io/" target="_blank">Xiangchao Yan</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=K0PpvLkAAAAJ&hl=en" target="_blank">Botian Shi</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://eetchen.github.io/" target="_blank">Tao Chen</a><sup>1,📧</sup>,</span>
+              <span class="author-block">
+                <a href="https://wlouyang.github.io/" target="_blank">Wanli Ouyang</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://bobrown.github.io/boZhang.github.io/" target="_blank"> Bo Zhang</a><sup>2,📧,&#x2021</sup>,</span>
+              <span class="author-block">
+                <a href="http://leibai.site/" target="_blank">Lei Bai</a><sup>2,📧</sup>,</span>
+              <span class="author-block">
+                <a href="https://mmlab.siat.ac.cn/yuqiao/" target="_blank">Yu Qiao</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=h3Nsz6YAAAAJ&hl=en" target="_blank">Bowen Zhou</a><sup>2</sup>,</span>
+              </span>
+              </div>
 
                   <div class="is-size-5 publication-authors">
                     <span class="author-block">
                       <sup>1</sup>School of Information Science and Technology, Fudan University<br>
                       <sup>2</sup>Shanghai Artificial Intelligence Laboratory<br>
                     </span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>This work was done when Jiakang Yuan was an intern at Shanghai
-                      AI Laboratory, <sup>&#8224</sup>Corresponding author</small></span>
+                    <span class="eql-cntrb"><small><br><sup>📧</sup>Corresponding author, <sup>&#x2021</sup>Project Leader</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -216,6 +215,29 @@
   </div>
 </section>
 <!-- End paper abstract -->
+
+<!-- Paper Method -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            We introduce Dolphin, a closed-loop open-ended auto-research framework, which is mainly composed of an idea generation process, an experiments verification process, and a result feedback process. The closed-loop means that the experimental results will be fed back into the idea generation process and the above three processes form a research cycle. In the idea generation process, DOLPHIN first retrieves papers based on the input topic and then filters papers that are not relevant to the topic. Then, the retrieved papers serve as references to guide LLMs to generate ideas, which will be further filtered through novelty and independence check process. Subsequently, DOLPHIN formulates experimental plans and proceeds to generate and debug code using a specifically designed error-traceback-guided debugging process. Finally, the results will be analyzed and utilized as feedback for the next cycle of ideas generation.
+          </p>
+          <p>
+            <img src="static/images/Snipaste_2024-12-16_13-13-10.png" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-centered", style="font-size: 1.5rem; font-weight: bolder">
+              The overview of Dolphin, an closed-loop open-ended auto-research framework.
+            </h2> 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper Method -->
 
 
 <!-- Image carousel -->
