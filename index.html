@@ -214,6 +214,23 @@
 </section> -->
 <!-- End teaser video -->
 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container", style="max-width: 900px">
+       <div class="item">
+        <!-- <h2 class="subtitle has-text-centered", style="font-size: 1.5rem; font-weight: bolder">
+          Different prompts may require different steps of noise prediction!!!
+        </h2> -->
+        <!-- Your image here -->
+        <img src="static/images/Figure1.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered", style="font-size: 1rem">
+          OmniCaptioner: the top section demonstrates its capability to process diverse visual domains. The bottom section highlights itsapplications in visual reasoning (associated with reasoning LLM), image generation (integrated with T2I generation models), and efficient downstream SFT tasks adaptation.
+        </h2>
+      </div>
+  </div>
+</div>
+</section>
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -223,7 +240,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            The scientific research paradigm is undergoing a profound transformation owing to the development of Artificial Intelligence (AI). Recent works demonstrate that various AI-assisted research methods can largely improve research efficiency by improving data analysis, accelerating computation, and fostering novel idea generation. To further move towards the ultimate goal (i.e., automatic scientific research), in this paper, we propose Dolphin, the first closed-loop open-ended auto-research framework to further build the entire process of human scientific research. Dolphin can generate research ideas, perform experiments, and get feedback from experimental results to generate higher-quality ideas. More specifically, Dolphin first generates novel ideas based on relevant papers which are ranked by the topic and task attributes. Then, the codes are automatically generated and debugged with the exception-traceback-guided local code structure. Finally, Dolphin automatically analyzes the results of each idea and feeds the results back to the next round of idea generation. Experiments are conducted on the benchmark datasets of different topics and results show that Dolphin can generate novel ideas continuously and complete the experiment in a loop. We highlight that Dolphin can automatically propose methods that are <b>comparable to the state-of-the-art</b> in some tasks such as 3D point classification.
+            We propose OmniCaptioner, a versatile visual captioning framework for generating fine-grained textual descriptions across a wide variety of visual domains. Unlike prior methods limited to specific image types (*e.g.*, natural images or geometric visuals), our framework provides a unified solution for captioning natural images, visual text (*e.g.*, posters, UIs, textbooks), and structured visuals (*e.g.*, documents, tables, charts). By converting low-level pixel information into semantically rich textual representations, our framework bridges the gap between visual and textual modalities. Our results highlight three key advantages: (i) Enhanced Visual Reasoning with LLMs, where long-context captions of visual modalities empower LLMs, particularly the DeepSeek-R1 series, to reason effectively in multimodal scenarios; (ii) Improved Image Generation, where detailed captions improve tasks like text-to-image generation and image transformation; and (iii) Efficient Supervised Fine-Tuning (SFT), which enables faster convergence with less data. We believe the versatility and adaptability of OmniCaptioner can offer a new perspective for bridging the gap between language and visual modalities.
           </p>
         </div>
       </div>
