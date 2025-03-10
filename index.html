@@ -260,16 +260,16 @@
             To achieve a unified multimodal pretraining paradigm and handle diverse visual domains, we first construct a diverse caption dataset.
           </p>
           <p>
-            <img src="static/images/data_pipeline.png" alt="MY ALT TEXT" style="margin-top: 20pt; width: 90%; margin-left: 5%;"/>
+            <img src="static/images/data_pipeline.png" alt="MY ALT TEXT" style="margin-top: 15pt; width: 90%; margin-left: 5%;"/>
             <h2 class="subtitle has-text-centered", style="font-size: 1rem; font-weight: 100;">
               OmniCaptioner's diverse visual captioning pipeline. The pipeline consists of Seed-Caption Generation and Caption Extension. OmniCaptioner utilizes a 21M-caption dataset, covering diverse domains beyond natural images, enabling more comprehensive captioning capabilities.
             </h2> 
           </p>
-          <p style="font-size: 1.2rem; font-weight: bolder">
+          <p style="font-size: 1.2rem; font-weight: bolder; margin-top: 30pt">
             After a unified pretraining process, OmniCaptioner can effectively adapt to diverse downstream tasks including (i) Improved Visual Reasoning Tasks with LLMs, (ii) Enhanced Image Generation and Conversion, and (iii) Efficient SFT Process.
           </p>
           <p>
-            <img src="static/images/downstream.png" alt="MY ALT TEXT" style="margin-top: 20pt; width: 90%; margin-left: 5%;"/>
+            <img src="static/images/downstream.png" alt="MY ALT TEXT" style="margin-top: 15pt; width: 90%; margin-left: 5%;"/>
             <h2 class="subtitle has-text-centered", style="font-size: 1rem; font-weight: 100;">
               Illustration of OmniCaptioner's plug-and-play applications (Sub-figure a, b) and comparison between OmniCaptioner and LLava-OneVision-7B on non-natural image captioning (Sub-figure c). 
             </h2> 
@@ -313,10 +313,24 @@
         <h2 class="title is-3">Experiments</h2>
         <div class="content has-text-justified">
           <p>
-            <img src="static/images/results.png" alt="MY ALT TEXT" style="margin-top: 20pt; width: 90%; margin-left: 5%;"/>
-            <h2 class="subtitle has-text-centered", style="font-size: 1.2rem; font-weight: bolder">
-              Results on three tasks including image classification, 3D classification, and sentiment classification.
+            <img src="static/images/reasoning_res.png" alt="MY ALT TEXT" style="margin-top: 20pt; width: 90%; margin-left: 5%;"/>
+            <h2 class="subtitle has-text-centered", style="font-size: 1rem; font-weight: 100">
+              Performance comparison on various visual benchmarks between our OmniCaptioner-inserted LLMs and previous SOTA MLLMs.
             </h2> 
+          </p>
+          <p>
+            <img src="static/images/reasoning_res.png" alt="MY ALT TEXT" style="margin-top: 20pt; width: 90%; margin-left: 5%;"/>
+            <h2 class="subtitle has-text-centered", style="font-size: 1rem; font-weight: 100">
+              Performance comparison on various visual benchmarks between our OmniCaptioner-inserted LLMs and previous SOTA MLLMs.
+            </h2> 
+          </p>
+          <p>
+          <table>
+            <tr>
+            <td><img src="static/images/geneval.png" border=0></td>
+            <td><img src="static/images/dpg.png" border=0></td>
+            </tr>
+          </table>
           </p>
         </div>
       </div>
